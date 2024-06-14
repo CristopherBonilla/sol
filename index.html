@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon/x-icon" href="Medios/nota.png">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>ANAHÍ</title>
+</head>
+<body>
+    <header><h1>Algunas Canciones Que Te Gustan</h1></header>
+    <div class="clearfix"></div>
+    <div class="card">
+        <h3>Canción 1</h3>
+        <!-- <h3>Gatita Only</h3> -->
+        <button class="boton" onclick="reproducirAudio('audioGatitaOnly', 'controlesGatitaOnly')">Reproducir</button>
+        <audio id="audioGatitaOnly" src="Medios/gatita_only.m4a"></audio>
+        <div id="controlesGatitaOnly" class="controles" style="display: none;">
+            <button class="boton" onclick="pausarAudio('audioGatitaOnly')">Pausar</button>
+            <button class="boton" onclick="detenerAudio('audioGatitaOnly')">Detener</button>
+            <button class="boton" onclick="retrocederAudio('audioGatitaOnly', 10)">Retroceder</button>
+            <button class="boton" onclick="adelantarAudio('audioGatitaOnly', 10)">Adelantar</button>
+            <input type="range" id="barraProgresoGatitaOnly" value="0" max="100" step="1" onchange="cambiarProgreso('audioGatitaOnly', 'barraProgresoGatitaOnly')">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="card">
+        <h3>Canción 2</h3>
+        <!--<h3>Mar De Emociones</h3>-->
+        <button class="boton" onclick="reproducirAudio('audioCancionDos', 'controlesCancionDos')">Reproducir</button>
+        <audio id="audioCancionDos" src="Medios/mar_emociones.m4a"></audio>
+        <div id="controlesCancionDos" class="controles" style="display: none;">
+            <button class="boton" onclick="pausarAudio('audioCancionDos')">Pausar</button>
+            <button class="boton" onclick="detenerAudio('audioCancionDos')">Detener</button>
+            <button class="boton" onclick="retrocederAudio('audioCancionDos', 10)">Retroceder</button>
+            <button class="boton" onclick="adelantarAudio('audioCancionDos', 10)">Adelantar</button>
+            <input type="range" id="barraProgresoCancionDos" value="0" max="100" step="1" onchange="cambiarProgreso('audioCancionDos', 'barraProgresoCancionDos')">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="card">
+        <h3>Canción 3</h3>
+        <button class="boton" onclick="reproducirAudio('audioCancionTres', 'controlesCancionTres')">Reproducir</button>
+        <audio id="audioCancionTres" src="Medios/Cancion3.mp3"></audio>
+        <div id="controlesCancionTres" class="controles" style="display: none;">
+            <button class="boton" onclick="pausarAudio('audioCancionTres')">Pausar</button>
+            <button class="boton" onclick="detenerAudio('audioCancionTres')">Detener</button>
+            <button class="boton" onclick="retrocederAudio('audioCancionTres', 10)">Retroceder</button>
+            <button class="boton" onclick="adelantarAudio('audioCancionTres', 10)">Adelantar</button>
+            <input type="range" id="barraProgresoCancionTres" value="0" max="100" step="1" onchange="cambiarProgreso('audioCancionTres', 'barraProgresoCancionTres')">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="card">
+        <h3>Canción 4</h3>
+        <button class="boton" onclick="reproducirAudio('audioCancionCuatro', 'controlesCancionCuatro')">Reproducir</button>
+        <audio id="audioCancionCuatro" src="Medios/Cancion4.m4a"></audio>
+        <div id="controlesCancionCuatro" class="controles" style="display: none;">
+            <button class="boton" onclick="pausarAudio('audioCancionCuatro')">Pausar</button>
+            <button class="boton" onclick="detenerAudio('audioCancionCuatro')">Detener</button>
+            <button class="boton" onclick="retrocederAudio('audioCancionCuatro', 10)">Retroceder</button>
+            <button class="boton" onclick="adelantarAudio('audioCancionCuatro', 10)">Adelantar</button>
+            <input type="range" id="barraProgresoCancionCuatro" value="0" max="100" step="1" onchange="cambiarProgreso('audioCancionCuatro', 'barraProgresoCancionCuatro')">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="card">
+        <h3>Canción 5</h3>
+        <button class="boton" onclick="reproducirAudio('audioCancionCinco', 'controlesCancionCinco')">Reproducir</button>
+        <audio id="audioCancionCinco" src="Medios/Cancion5.m4a"></audio>
+        <div id="controlesCancionCinco" class="controles" style="display: none;">
+            <button class="boton" onclick="pausarAudio('audioCancionCinco')">Pausar</button>
+            <button class="boton" onclick="detenerAudio('audioCancionCinco')">Detener</button>
+            <button class="boton" onclick="retrocederAudio('audioCancionCinco', 10)">Retroceder</button>
+            <button class="boton" onclick="adelantarAudio('audioCancionCinco', 10)">Adelantar</button>
+            <input type="range" id="barraProgresoCancionCinco" value="0" max="100" step="1" onchange="cambiarProgreso('audioCancionCinco', 'barraProgresoCancionCinco')">
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="card">
+        <h3>Canción 6</h3>
+        <button class="boton" onclick="reproducirAudio('audioCancionSeis', 'controlesCancionSeis')">Reproducir</button>
+        <audio id="audioCancionSeis" src="Medios/Cancion6.m4a"></audio>
+        <div id="controlesCancionSeis" class="controles" style="display: none;">
+            <button class="boton" onclick="pausarAudio('audioCancionSeis')">Pausar</button>
+            <button class="boton" onclick="detenerAudio('audioCancionSeis')">Detener</button>
+            <button class="boton" onclick="retrocederAudio('audioCancionSeis', 10)">Retroceder</button>
+            <button class="boton" onclick="adelantarAudio('audioCancionSeis', 10)">Adelantar</button>
+            <input type="range" id="barraProgresoCancionSeis" value="0" max="100" step="1" onchange="cambiarProgreso('audioCancionSeis', 'barraProgresoCancionSeis')">
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+<footer>
+    <p>Derechos reservados &copyChap</p>
+</footer>
+</html>

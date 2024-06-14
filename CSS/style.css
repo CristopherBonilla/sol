@@ -38,11 +38,42 @@ header {
     text-align: center;
     margin: 20px auto; /* Centrar horizontalmente */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.084); /* Fondo semi-transparente */
+    background-color: rgba(104, 95, 95, 0.299); /* Fondo semi-transparente */
     border-radius: 10px;
     max-width: 300px; /* Ancho máximo de las tarjetas */
     transition: all 300ms;
+    /*animation: cambiar 20s infinite linear;*/
 }
+
+/* @keyframes cambiar {
+    0%{
+        border: 10px solid #8080803d;
+    }
+    12%{
+        border: 10px solid #98FF983d;
+    }
+    24%{
+        border: 10px solid #40E0D03d;
+    }
+    36%{
+        border: 10px solid #87CEEB3d;
+    }
+    48%{
+        border: 10px solid #7A5DC73d;
+    }
+    60%{
+        border: 10px solid #C8A2C83d;
+    }
+    72%{
+        border: 10px solid #FFC0CB3d;
+    }
+    84%{
+        border: 10px solid #8A2BE23d;
+    }
+    100%{
+        border: 10px solid #8080803d;
+    }
+} */
 
 
 .card:hover{
@@ -51,12 +82,15 @@ header {
 
 .boton{
     padding: 5px;
-    background-color: rgba(99, 26, 90, 0.37);
+    background-color: rgba(184, 42, 167, 0.599);
     color: #fff;
     border-radius: 5px; /* Ajusta el valor según el grado de curvatura que desees */
     cursor: pointer;
     margin-bottom: 5px;
+    box-shadow: 1px 2px 6px 1px rgba(118, 15, 106);
+    border-color: rgba(118, 15, 106);
 }
+
 
 .boton:hover {
     background-color: #c9bfe2; 

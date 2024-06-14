@@ -17,6 +17,7 @@ html {
     background-color: #000;
     background: url('../Medios/fondo.jpg');
     background-size: cover; /* Hace que la imagen de fondo cubra toda la página */
+    background-position: center;
     color: #fff; 
     font-family: "TrebuchetMS";
 }
